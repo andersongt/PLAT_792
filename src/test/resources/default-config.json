@@ -1,0 +1,138 @@
+{
+	"vertxOptions": {
+		"eventLoopPoolSize": 8,
+		"workerPoolSize": 20,
+		"internalBlockingPoolSize": 20,
+		"blockedThreadCheckInterval": 1000,
+		"maxEventLoopExecuteTime": 2000000000,
+		"maxWorkerExecuteTime": 60000000000,
+		"haEnabled": false,
+		"quorumSize": 1,
+		"haGroup": "__DEFAULT__",
+		"warningExceptionTime": 5000000000,
+		"fileResolverCachingEnabled": true,
+		"metricsOptions": {
+			"enabled": true
+		},
+		"eventBusOptions": {
+			"clustered": false,
+			"clusterPingInterval": 20000,
+			"clusterPingReplyInterval": 20000,
+			"port": 0,
+			"host": "localhost",
+			"acceptBacklog": -1,
+			"clientAuth": "NONE",
+			"reconnectAttempts": 0,
+			"reconnectInterval": 1000,
+			"connectTimeout": 60000,
+			"trustAll": true
+		},
+		"addressResolverOptions": {
+			"servers": null,
+			"optResourceEnabled": true,
+			"cacheMinTimeToLive": 0,
+			"cacheMaxTimeToLive": 2147483647,
+			"cacheNegativeTimeToLive": 0,
+			"queryTimeout": 5000,
+			"maxQueries": 4,
+			"rdFlag": true,
+			"searchDomains": null,
+			"ndots": -1,
+			"rotateServers": false
+		}
+	},
+	"deploys": [
+		{
+			"className": "com.fox.platform.lib.vrt.AdminServiceVerticle",
+			"ha": false,
+			"instances": 1,
+			"worker": false,
+			"multiThreaded": false
+		},
+		{
+			"className": "com.fox.platform.lib.vrt.ConfigVerticle",
+			"ha": false,
+			"instances": 1,
+			"worker": false,
+			"multiThreaded": false
+		},
+		{
+			"className": "com.fox.rampup.plat792.infra.api.RestCMSVerticle",
+			"ha": false,
+			"instances": 1,
+			"worker": false,
+			"multiThreaded": false
+		},
+		{
+			"className": "com.fox.rampup.plat792.infra.serv.ProxyCMSVerticle",
+			"ha": false,
+			"instances": 1,
+			"worker": false,
+			"multiThreaded": false
+		}
+	],
+	"admin": {
+		"port": 9000,
+		"metrics": {
+			"path": "/metrics",
+			"method": "GET"
+		},
+		"healthcheck": {
+			"path": "/healthcheck",
+			"method": "GET"
+		},
+		"config": {
+			"path": "/config",
+			"method": "GET"
+		},
+		"requestConfigAddress": "requestConfigAddress",
+		"updateConfigAddress": "updateConfigAddress"
+	},
+	"baseline": {
+		"port": 8080
+	},
+	"restCMSChannelsVerticleConfig": {
+		"httpServerOptions": {
+			"port": 9091,
+			"acceptBacklog": 10000,
+			"sendBufferSize": 4096,
+			"receiveBufferSize": 4096
+		},
+		"apiEndpoints": {
+			"getChannels": {
+				"apiPath": "/channels/content",
+				"httpMethod": "GET"
+			},
+			"healthCheck": {
+				"apiPath": "/channels/healthcheck",
+				"httpMethod": "GET"
+			}
+		},
+		"proxyCmsChannelsVerticleConfig": {
+			"address": "getChannelsProxyAddr",
+			"endpoint": {
+				"ssl": true,
+				"host": "",
+				"port": 443,
+				"maxSize": 300,
+				"defaultOrder": 999,
+				"trustAll": true,
+				"webClientOptions": {
+					"trustAll": true,
+					"keepAlive": true,
+					"idleTimeout": 270,
+					"maxPoolSize": 30,
+					"pipelining": false,
+					"pipeliningLimit": 15
+				}
+			}
+		},
+		"cmsAnticorruptionConfig": {
+			"getChannelQuery": {
+				"requestPayload":"{\"query\":{\"bool\":{\"must\":[{\"term\":{\"type.description\":\"olympicschannel\"}},{\"nested\":{\"path\":\"groups\",\"query\":{\"bool\":{\"must\":[{\"nested\":{\"path\":\"groups.feeds\",\"query\":{\"match\":{\"groups.feeds.countryId\":\"${country}\"}}}}]}},\"inner_hits\":{}}}]}},\"sort\":[{\"groups.fields.id.raw\":{\"nested_path\":\"groups\",\"order\":\"asc\"}}]}",
+				"host": "search-omnix-services-sh2266ar6ket7lqcnhj3dpzccu.us-east-1.es.amazonaws.com",
+				"urlPath": "/omnix_es/contentObjects/_search"
+			}
+		}
+	}
+}
