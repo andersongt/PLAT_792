@@ -65,7 +65,6 @@ public class ProxyCMSVerticle extends AbstractConfigurationVerticle
     Future<Void> startFuture = Future.future();
     super.start(startFuture);
 
-
     Guice.createInjector(new ProxyCMSModule(vertx, config())).injectMembers(this);
 
     startFuture.setHandler(handler -> {

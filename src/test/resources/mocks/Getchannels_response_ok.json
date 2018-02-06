@@ -1,0 +1,952 @@
+{
+    "took": 3,
+    "timed_out": false,
+    "_shards": {
+        "total": 3,
+        "successful": 3,
+        "failed": 0
+    },
+    "hits": {
+        "total": 3,
+        "max_score": null,
+        "hits": [
+            {
+                "_index": "omnix_es_20180125112708",
+                "_type": "contentObjects",
+                "_id": "d3d6e66b-bf75-4fd4-9d87-fb1e849fe9e1",
+                "_score": null,
+                "_source": {
+                    "id": "d3d6e66b-bf75-4fd4-9d87-fb1e849fe9e1",
+                    "code": 34575,
+                    "name": "FOX Sports",
+                    "publishDate": "2016-06-14T00:00:00",
+                    "lastupdate": "2017-10-09T15:41:54.673",
+                    "isSocialPost": false,
+                    "type": {
+                        "description": "OlympicsChannel"
+                    },
+                    "domain": {
+                        "id": 32,
+                        "name": "foxsportsla.com",
+                        "languageId": "es",
+                        "networkId": "FOXSPORTS",
+                        "countryId": "ar"
+                    },
+                    "show": {
+                        "id": null,
+                        "name": null,
+                        "code": null,
+                        "publishDate": null,
+                        "lastupdate": null,
+                        "programmingSerie": null,
+                        "type": {
+                            "id": null,
+                            "name": null,
+                            "showGroupId": null
+                        },
+                        "paradigm": {
+                            "id": null,
+                            "synopsis": null,
+                            "languageId": null
+                        }
+                    },
+                    "updatedOn": null,
+                    "groups": [
+                        {
+                            "id": "a1ab2ea7-9583-445e-98c9-06ada95b8a75",
+                            "enabled": true,
+                            "priority": null,
+                            "feeds": [
+                                {
+                                    "id": "FSPCHB",
+                                    "countryId": "CL"
+                                }
+                            ],
+                            "fields": {
+                                "logo": "https://cdn.foxplay.com/sites/foxplay-la/files/img/logo-color-channels/fs-logo.png",
+                                "urn": "urn:tve:foxsportschile",
+                                "enabled": "yes",
+                                "order": "2",
+                                "auth_level": "premium",
+                                "id": "fox",
+                                "signal": "21031",
+                                "name": "FOX Sports"
+                            }
+                        },
+                        {
+                            "id": "20c72599-64b4-4aaf-a63d-6dff58b1f018",
+                            "enabled": true,
+                            "priority": null,
+                            "feeds": [
+                                {
+                                    "id": "FSPEVZ",
+                                    "countryId": "VE"
+                                }
+                            ],
+                            "fields": {
+                                "order": "2",
+                                "name": "FOX Sports",
+                                "urn": "urn:tve:foxsports1",
+                                "enabled": "yes",
+                                "id": "fox",
+                                "logo": "https://cdn.foxplay.com/sites/foxplay-la/files/img/logo-color-channels/fs-logo.png",
+                                "auth_level": "basic",
+                                "signal": "45493"
+                            }
+                        },
+                        {
+                            "id": "0780f1f3-1ff1-44f0-9882-779ae0f3c49d",
+                            "enabled": true,
+                            "priority": null,
+                            "feeds": [
+                                {
+                                    "id": "FSPEMX",
+                                    "countryId": "MX"
+                                }
+                            ],
+                            "fields": {
+                                "urn": "urn:tve:foxsports1",
+                                "signal": "45492",
+                                "enabled": "yes",
+                                "id": "fox",
+                                "logo": "https://cdn.foxplay.com/sites/foxplay-la/files/img/logo-color-channels/fs-logo.png",
+                                "order": "2",
+                                "name": "FOX Sports",
+                                "auth_level": "basic"
+                            }
+                        },
+                        {
+                            "id": "22be913d-858f-45c1-abf1-8aee1e50be32",
+                            "enabled": true,
+                            "priority": null,
+                            "feeds": [
+                                {
+                                    "id": "FSPMNC",
+                                    "countryId": "CR"
+                                },
+                                {
+                                    "id": "FSPMNC",
+                                    "countryId": "DO"
+                                },
+                                {
+                                    "id": "FSPMNC",
+                                    "countryId": "GT"
+                                },
+                                {
+                                    "id": "FSPMNC",
+                                    "countryId": "HN"
+                                },
+                                {
+                                    "id": "FSPMNC",
+                                    "countryId": "NI"
+                                },
+                                {
+                                    "id": "FSPMNC",
+                                    "countryId": "PA"
+                                },
+                                {
+                                    "id": "FSPMNC",
+                                    "countryId": "SV"
+                                }
+                            ],
+                            "fields": {
+                                "auth_level": "basic",
+                                "signal": "21018",
+                                "id": "fox",
+                                "logo": "https://cdn.foxplay.com/sites/foxplay-la/files/img/logo-color-channels/fs-logo.png",
+                                "enabled": "yes",
+                                "urn": "urn:tve:foxsports1",
+                                "order": "2",
+                                "name": "FOX Sports"
+                            }
+                        },
+                        {
+                            "id": "a0bcedf3-baf5-4b6a-8252-ae691f8b7c42",
+                            "enabled": true,
+                            "priority": null,
+                            "feeds": [
+                                {
+                                    "id": "FSPFNT",
+                                    "countryId": "BO"
+                                },
+                                {
+                                    "id": "FSPFNT",
+                                    "countryId": "CO"
+                                },
+                                {
+                                    "id": "FSPFNT",
+                                    "countryId": "EC"
+                                },
+                                {
+                                    "id": "FSPFNT",
+                                    "countryId": "PE"
+                                },
+                                {
+                                    "id": "FSPFPA",
+                                    "countryId": "PY"
+                                },
+                                {
+                                    "id": "FSPFPA",
+                                    "countryId": "UY"
+                                },
+                                {
+                                    "id": "FSPFPAAR",
+                                    "countryId": "AR"
+                                }
+                            ],
+                            "fields": {
+                                "id": "fox",
+                                "name": "FOX Sports",
+                                "order": "2",
+                                "auth_level": "basic",
+                                "urn": "urn:tve:foxsports1",
+                                "logo": "https://cdn.foxplay.com/sites/foxplay-la/files/img/logo-color-channels/fs-logo.png",
+                                "enabled": "yes",
+                                "signal": "21017"
+                            }
+                        }
+                    ],
+                    "feeds": [
+                        {
+                            "id": "FSPCHB",
+                            "countryId": "CL"
+                        },
+                        {
+                            "id": "FSPEMX",
+                            "countryId": "MX"
+                        },
+                        {
+                            "id": "FSPEVZ",
+                            "countryId": "VE"
+                        },
+                        {
+                            "id": "FSPFNT",
+                            "countryId": "BO"
+                        },
+                        {
+                            "id": "FSPFNT",
+                            "countryId": "CO"
+                        },
+                        {
+                            "id": "FSPFNT",
+                            "countryId": "EC"
+                        },
+                        {
+                            "id": "FSPFNT",
+                            "countryId": "PE"
+                        },
+                        {
+                            "id": "FSPFPA",
+                            "countryId": "PY"
+                        },
+                        {
+                            "id": "FSPFPA",
+                            "countryId": "UY"
+                        },
+                        {
+                            "id": "FSPFPAAR",
+                            "countryId": "AR"
+                        },
+                        {
+                            "id": "FSPMNC",
+                            "countryId": "CR"
+                        },
+                        {
+                            "id": "FSPMNC",
+                            "countryId": "DO"
+                        },
+                        {
+                            "id": "FSPMNC",
+                            "countryId": "GT"
+                        },
+                        {
+                            "id": "FSPMNC",
+                            "countryId": "HN"
+                        },
+                        {
+                            "id": "FSPMNC",
+                            "countryId": "NI"
+                        },
+                        {
+                            "id": "FSPMNC",
+                            "countryId": "PA"
+                        },
+                        {
+                            "id": "FSPMNC",
+                            "countryId": "SV"
+                        }
+                    ],
+                    "categories": []
+                },
+                "sort": [
+                    "fox"
+                ],
+                "inner_hits": {
+                    "groups": {
+                        "hits": {
+                            "total": 1,
+                            "max_score": 2.894575,
+                            "hits": [
+                                {
+                                    "_nested": {
+                                        "field": "groups",
+                                        "offset": 2
+                                    },
+                                    "_score": 2.894575,
+                                    "_source": {
+                                        "id": "0780f1f3-1ff1-44f0-9882-779ae0f3c49d",
+                                        "enabled": true,
+                                        "priority": null,
+                                        "feeds": [
+                                            {
+                                                "id": "FSPEMX",
+                                                "countryId": "MX"
+                                            }
+                                        ],
+                                        "fields": {
+                                            "urn": "urn:tve:foxsports1",
+                                            "signal": "45492",
+                                            "enabled": "yes",
+                                            "id": "fox",
+                                            "logo": "https://cdn.foxplay.com/sites/foxplay-la/files/img/logo-color-channels/fs-logo.png",
+                                            "order": "2",
+                                            "name": "FOX Sports",
+                                            "auth_level": "basic"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "_index": "omnix_es_20180125112708",
+                "_type": "contentObjects",
+                "_id": "d6fcb674-cd7c-46ab-804d-15891b63e85f",
+                "_score": null,
+                "_source": {
+                    "id": "d6fcb674-cd7c-46ab-804d-15891b63e85f",
+                    "code": 34576,
+                    "name": "FOX Sports 2",
+                    "publishDate": "2016-06-14T00:00:00",
+                    "lastupdate": "2017-10-09T15:42:32.037",
+                    "isSocialPost": false,
+                    "type": {
+                        "description": "OlympicsChannel"
+                    },
+                    "domain": {
+                        "id": 32,
+                        "name": "foxsportsla.com",
+                        "languageId": "es",
+                        "networkId": "FOXSPORTS",
+                        "countryId": "ar"
+                    },
+                    "show": {
+                        "id": null,
+                        "name": null,
+                        "code": null,
+                        "publishDate": null,
+                        "lastupdate": null,
+                        "programmingSerie": null,
+                        "type": {
+                            "id": null,
+                            "name": null,
+                            "showGroupId": null
+                        },
+                        "paradigm": {
+                            "id": null,
+                            "synopsis": null,
+                            "languageId": null
+                        }
+                    },
+                    "updatedOn": null,
+                    "groups": [
+                        {
+                            "id": "c6094bb6-5411-4ac3-8c73-53207014993e",
+                            "enabled": true,
+                            "priority": null,
+                            "feeds": [
+                                {
+                                    "id": "FSPCHB",
+                                    "countryId": "CL"
+                                }
+                            ],
+                            "fields": {
+                                "name": "FOX Sports 2",
+                                "urn": "urn:tve:foxsports2",
+                                "auth_level": "premium",
+                                "id": "fox2",
+                                "logo": "https://cdn.foxplay.com/sites/foxplay-la/files/img/logo-color-channels/fs2-logo.png",
+                                "order": "4",
+                                "enabled": "yes",
+                                "signal": "21034"
+                            }
+                        },
+                        {
+                            "id": "66ab3587-0060-4117-b070-a61c5c565cc0",
+                            "enabled": true,
+                            "priority": null,
+                            "feeds": [
+                                {
+                                    "id": "FSPEMX",
+                                    "countryId": "MX"
+                                },
+                                {
+                                    "id": "FSPEVZ",
+                                    "countryId": "VE"
+                                },
+                                {
+                                    "id": "FSPMNC",
+                                    "countryId": "CR"
+                                },
+                                {
+                                    "id": "FSPMNC",
+                                    "countryId": "DO"
+                                },
+                                {
+                                    "id": "FSPMNC",
+                                    "countryId": "GT"
+                                },
+                                {
+                                    "id": "FSPMNC",
+                                    "countryId": "HN"
+                                },
+                                {
+                                    "id": "FSPMNC",
+                                    "countryId": "NI"
+                                },
+                                {
+                                    "id": "FSPMNC",
+                                    "countryId": "PA"
+                                },
+                                {
+                                    "id": "FSPMNC",
+                                    "countryId": "SV"
+                                }
+                            ],
+                            "fields": {
+                                "auth_level": "basic",
+                                "id": "fox2",
+                                "name": "FOX Sports 2",
+                                "logo": "https://cdn.foxplay.com/sites/foxplay-la/files/img/logo-color-channels/fs2-logo.png",
+                                "urn": "urn:tve:foxsports2",
+                                "order": "4",
+                                "signal": "21033",
+                                "enabled": "yes"
+                            }
+                        },
+                        {
+                            "id": "9fd83ea6-30b5-4bc8-baf4-e517dc73f0c3",
+                            "enabled": true,
+                            "priority": null,
+                            "feeds": [
+                                {
+                                    "id": "FSPFNT",
+                                    "countryId": "BO"
+                                },
+                                {
+                                    "id": "FSPFNT",
+                                    "countryId": "CO"
+                                },
+                                {
+                                    "id": "FSPFNT",
+                                    "countryId": "EC"
+                                },
+                                {
+                                    "id": "FSPFNT",
+                                    "countryId": "PE"
+                                },
+                                {
+                                    "id": "FSPFPA",
+                                    "countryId": "PY"
+                                },
+                                {
+                                    "id": "FSPFPA",
+                                    "countryId": "UY"
+                                },
+                                {
+                                    "id": "FSPFPAAR",
+                                    "countryId": "AR"
+                                }
+                            ],
+                            "fields": {
+                                "auth_level": "basic",
+                                "logo": "https://cdn.foxplay.com/sites/foxplay-la/files/img/logo-color-channels/fs2-logo.png",
+                                "urn": "urn:tve:foxsports2",
+                                "signal": "21034",
+                                "order": "4",
+                                "enabled": "yes",
+                                "id": "fox2",
+                                "name": "FOX Sports 2"
+                            }
+                        }
+                    ],
+                    "feeds": [
+                        {
+                            "id": "FSPCHB",
+                            "countryId": "CL"
+                        },
+                        {
+                            "id": "FSPEMX",
+                            "countryId": "MX"
+                        },
+                        {
+                            "id": "FSPEVZ",
+                            "countryId": "VE"
+                        },
+                        {
+                            "id": "FSPFNT",
+                            "countryId": "BO"
+                        },
+                        {
+                            "id": "FSPFNT",
+                            "countryId": "CO"
+                        },
+                        {
+                            "id": "FSPFNT",
+                            "countryId": "EC"
+                        },
+                        {
+                            "id": "FSPFNT",
+                            "countryId": "PE"
+                        },
+                        {
+                            "id": "FSPFPA",
+                            "countryId": "PY"
+                        },
+                        {
+                            "id": "FSPFPA",
+                            "countryId": "UY"
+                        },
+                        {
+                            "id": "FSPFPAAR",
+                            "countryId": "AR"
+                        },
+                        {
+                            "id": "FSPMNC",
+                            "countryId": "CR"
+                        },
+                        {
+                            "id": "FSPMNC",
+                            "countryId": "DO"
+                        },
+                        {
+                            "id": "FSPMNC",
+                            "countryId": "GT"
+                        },
+                        {
+                            "id": "FSPMNC",
+                            "countryId": "HN"
+                        },
+                        {
+                            "id": "FSPMNC",
+                            "countryId": "NI"
+                        },
+                        {
+                            "id": "FSPMNC",
+                            "countryId": "PA"
+                        },
+                        {
+                            "id": "FSPMNC",
+                            "countryId": "SV"
+                        }
+                    ],
+                    "categories": []
+                },
+                "sort": [
+                    "fox2"
+                ],
+                "inner_hits": {
+                    "groups": {
+                        "hits": {
+                            "total": 1,
+                            "max_score": 2.8869052,
+                            "hits": [
+                                {
+                                    "_nested": {
+                                        "field": "groups",
+                                        "offset": 1
+                                    },
+                                    "_score": 2.8869052,
+                                    "_source": {
+                                        "id": "66ab3587-0060-4117-b070-a61c5c565cc0",
+                                        "enabled": true,
+                                        "priority": null,
+                                        "feeds": [
+                                            {
+                                                "id": "FSPEMX",
+                                                "countryId": "MX"
+                                            },
+                                            {
+                                                "id": "FSPEVZ",
+                                                "countryId": "VE"
+                                            },
+                                            {
+                                                "id": "FSPMNC",
+                                                "countryId": "CR"
+                                            },
+                                            {
+                                                "id": "FSPMNC",
+                                                "countryId": "DO"
+                                            },
+                                            {
+                                                "id": "FSPMNC",
+                                                "countryId": "GT"
+                                            },
+                                            {
+                                                "id": "FSPMNC",
+                                                "countryId": "HN"
+                                            },
+                                            {
+                                                "id": "FSPMNC",
+                                                "countryId": "NI"
+                                            },
+                                            {
+                                                "id": "FSPMNC",
+                                                "countryId": "PA"
+                                            },
+                                            {
+                                                "id": "FSPMNC",
+                                                "countryId": "SV"
+                                            }
+                                        ],
+                                        "fields": {
+                                            "auth_level": "basic",
+                                            "id": "fox2",
+                                            "name": "FOX Sports 2",
+                                            "logo": "https://cdn.foxplay.com/sites/foxplay-la/files/img/logo-color-channels/fs2-logo.png",
+                                            "urn": "urn:tve:foxsports2",
+                                            "order": "4",
+                                            "signal": "21033",
+                                            "enabled": "yes"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "_index": "omnix_es_20180125112708",
+                "_type": "contentObjects",
+                "_id": "3d3345c0-e385-443b-8783-d25756c4879a",
+                "_score": null,
+                "_source": {
+                    "id": "3d3345c0-e385-443b-8783-d25756c4879a",
+                    "code": 35394,
+                    "name": "FOX Sports 3",
+                    "publishDate": "2016-07-22T00:00:00",
+                    "lastupdate": "2017-11-28T20:16:39.167",
+                    "isSocialPost": false,
+                    "type": {
+                        "description": "OlympicsChannel"
+                    },
+                    "domain": {
+                        "id": 32,
+                        "name": "foxsportsla.com",
+                        "languageId": "es",
+                        "networkId": "FOXSPORTS",
+                        "countryId": "ar"
+                    },
+                    "show": {
+                        "id": null,
+                        "name": null,
+                        "code": null,
+                        "publishDate": null,
+                        "lastupdate": null,
+                        "programmingSerie": null,
+                        "type": {
+                            "id": null,
+                            "name": null,
+                            "showGroupId": null
+                        },
+                        "paradigm": {
+                            "id": null,
+                            "synopsis": null,
+                            "languageId": null
+                        }
+                    },
+                    "updatedOn": null,
+                    "groups": [
+                        {
+                            "id": "9567a55f-78d9-4f4d-a591-e605cbcbb6fa",
+                            "enabled": true,
+                            "priority": null,
+                            "feeds": [
+                                {
+                                    "id": "FSPEMX",
+                                    "countryId": "MX"
+                                },
+                                {
+                                    "id": "FSPEVZ",
+                                    "countryId": "VE"
+                                },
+                                {
+                                    "id": "FSPFNT",
+                                    "countryId": "BO"
+                                },
+                                {
+                                    "id": "FSPFNT",
+                                    "countryId": "CO"
+                                },
+                                {
+                                    "id": "FSPFNT",
+                                    "countryId": "EC"
+                                },
+                                {
+                                    "id": "FSPFNT",
+                                    "countryId": "PE"
+                                },
+                                {
+                                    "id": "FSPFPA",
+                                    "countryId": "PY"
+                                },
+                                {
+                                    "id": "FSPFPA",
+                                    "countryId": "UY"
+                                },
+                                {
+                                    "id": "FSPFPAAR",
+                                    "countryId": "AR"
+                                },
+                                {
+                                    "id": "FSPMNC",
+                                    "countryId": "CR"
+                                },
+                                {
+                                    "id": "FSPMNC",
+                                    "countryId": "DO"
+                                },
+                                {
+                                    "id": "FSPMNC",
+                                    "countryId": "GT"
+                                },
+                                {
+                                    "id": "FSPMNC",
+                                    "countryId": "HN"
+                                },
+                                {
+                                    "id": "FSPMNC",
+                                    "countryId": "NI"
+                                },
+                                {
+                                    "id": "FSPMNC",
+                                    "countryId": "PA"
+                                },
+                                {
+                                    "id": "FSPMNC",
+                                    "countryId": "SV"
+                                }
+                            ],
+                            "fields": {
+                                "signal": "21035",
+                                "auth_level": "basic",
+                                "order": "5",
+                                "urn": "urn:tve:foxsports3",
+                                "name": "Fox Sports 3",
+                                "enabled": "yes",
+                                "logo": "https://cdn.foxplay.com/sites/foxplay-la/files/img/logo-color-channels/fs3-logo.png",
+                                "id": "fox3"
+                            }
+                        },
+                        {
+                            "id": "2fce5a4a-5eb2-403c-9a58-ef14eca73596",
+                            "enabled": true,
+                            "priority": null,
+                            "feeds": [
+                                {
+                                    "id": "FSPCHB",
+                                    "countryId": "CL"
+                                }
+                            ],
+                            "fields": {
+                                "name": "Fox Sports 3",
+                                "signal": "21035",
+                                "urn": "urn:tve:foxsports3",
+                                "id": "fox3",
+                                "order": "5",
+                                "enabled": "yes",
+                                "logo": "https://cdn.foxplay.com/sites/foxplay-la/files/img/logo-color-channels/fs3-logo.png",
+                                "auth_level": "premium"
+                            }
+                        }
+                    ],
+                    "feeds": [
+                        {
+                            "id": "FSPCHB",
+                            "countryId": "CL"
+                        },
+                        {
+                            "id": "FSPEMX",
+                            "countryId": "MX"
+                        },
+                        {
+                            "id": "FSPEVZ",
+                            "countryId": "VE"
+                        },
+                        {
+                            "id": "FSPFNT",
+                            "countryId": "BO"
+                        },
+                        {
+                            "id": "FSPFNT",
+                            "countryId": "CO"
+                        },
+                        {
+                            "id": "FSPFNT",
+                            "countryId": "EC"
+                        },
+                        {
+                            "id": "FSPFNT",
+                            "countryId": "PE"
+                        },
+                        {
+                            "id": "FSPFPA",
+                            "countryId": "PY"
+                        },
+                        {
+                            "id": "FSPFPA",
+                            "countryId": "UY"
+                        },
+                        {
+                            "id": "FSPFPAAR",
+                            "countryId": "AR"
+                        },
+                        {
+                            "id": "FSPMNC",
+                            "countryId": "CR"
+                        },
+                        {
+                            "id": "FSPMNC",
+                            "countryId": "DO"
+                        },
+                        {
+                            "id": "FSPMNC",
+                            "countryId": "GT"
+                        },
+                        {
+                            "id": "FSPMNC",
+                            "countryId": "HN"
+                        },
+                        {
+                            "id": "FSPMNC",
+                            "countryId": "NI"
+                        },
+                        {
+                            "id": "FSPMNC",
+                            "countryId": "PA"
+                        },
+                        {
+                            "id": "FSPMNC",
+                            "countryId": "SV"
+                        }
+                    ],
+                    "categories": []
+                },
+                "sort": [
+                    "fox3"
+                ],
+                "inner_hits": {
+                    "groups": {
+                        "hits": {
+                            "total": 1,
+                            "max_score": 2.8922856,
+                            "hits": [
+                                {
+                                    "_nested": {
+                                        "field": "groups",
+                                        "offset": 0
+                                    },
+                                    "_score": 2.8922856,
+                                    "_source": {
+                                        "id": "9567a55f-78d9-4f4d-a591-e605cbcbb6fa",
+                                        "enabled": true,
+                                        "priority": null,
+                                        "feeds": [
+                                            {
+                                                "id": "FSPEMX",
+                                                "countryId": "MX"
+                                            },
+                                            {
+                                                "id": "FSPEVZ",
+                                                "countryId": "VE"
+                                            },
+                                            {
+                                                "id": "FSPFNT",
+                                                "countryId": "BO"
+                                            },
+                                            {
+                                                "id": "FSPFNT",
+                                                "countryId": "CO"
+                                            },
+                                            {
+                                                "id": "FSPFNT",
+                                                "countryId": "EC"
+                                            },
+                                            {
+                                                "id": "FSPFNT",
+                                                "countryId": "PE"
+                                            },
+                                            {
+                                                "id": "FSPFPA",
+                                                "countryId": "PY"
+                                            },
+                                            {
+                                                "id": "FSPFPA",
+                                                "countryId": "UY"
+                                            },
+                                            {
+                                                "id": "FSPFPAAR",
+                                                "countryId": "AR"
+                                            },
+                                            {
+                                                "id": "FSPMNC",
+                                                "countryId": "CR"
+                                            },
+                                            {
+                                                "id": "FSPMNC",
+                                                "countryId": "DO"
+                                            },
+                                            {
+                                                "id": "FSPMNC",
+                                                "countryId": "GT"
+                                            },
+                                            {
+                                                "id": "FSPMNC",
+                                                "countryId": "HN"
+                                            },
+                                            {
+                                                "id": "FSPMNC",
+                                                "countryId": "NI"
+                                            },
+                                            {
+                                                "id": "FSPMNC",
+                                                "countryId": "PA"
+                                            },
+                                            {
+                                                "id": "FSPMNC",
+                                                "countryId": "SV"
+                                            }
+                                        ],
+                                        "fields": {
+                                            "signal": "21035",
+                                            "auth_level": "basic",
+                                            "order": "5",
+                                            "urn": "urn:tve:foxsports3",
+                                            "name": "Fox Sports 3",
+                                            "enabled": "yes",
+                                            "logo": "https://cdn.foxplay.com/sites/foxplay-la/files/img/logo-color-channels/fs3-logo.png",
+                                            "id": "fox3"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

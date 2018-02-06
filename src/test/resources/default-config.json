@@ -116,9 +116,7 @@
 				"port": 443,
 				"maxSize": 300,
 				"defaultOrder": 999,
-				"trustAll": true,
 				"webClientOptions": {
-					"trustAll": true,
 					"keepAlive": true,
 					"idleTimeout": 270,
 					"maxPoolSize": 30,
@@ -128,8 +126,8 @@
 			}
 		},
 		"cmsAnticorruptionConfig": {
-			"getChannelQuery": {
-				"requestPayload":"{\"query\":{\"bool\":{\"must\":[{\"term\":{\"type.description\":\"olympicschannel\"}},{\"nested\":{\"path\":\"groups\",\"query\":{\"bool\":{\"must\":[{\"nested\":{\"path\":\"groups.feeds\",\"query\":{\"match\":{\"groups.feeds.countryId\":\"${country}\"}}}}]}},\"inner_hits\":{}}}]}},\"sort\":[{\"groups.fields.id.raw\":{\"nested_path\":\"groups\",\"order\":\"asc\"}}]}",
+			"channelQuery": {
+				"requestPayload": "{\"query\":{\"bool\":{\"must\":[{\"term\":{\"type.description\":\"olympicschannel\"}},{\"nested\":{\"path\":\"groups\",\"query\":{\"bool\":{\"must\":[{\"nested\":{\"path\":\"groups.feeds\",\"query\":{\"match\":{\"groups.feeds.countryId\":\"${country}\"}}}}]}},\"inner_hits\":{}}}]}},\"sort\":[{\"groups.fields.id.raw\":{\"nested_path\":\"groups\",\"order\":\"asc\"}}]}",
 				"host": "search-omnix-services-sh2266ar6ket7lqcnhj3dpzccu.us-east-1.es.amazonaws.com",
 				"urlPath": "/omnix_es/contentObjects/_search"
 			}

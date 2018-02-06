@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.fox.rampup.plat792.unit.infra.trans;
 
 import static org.junit.Assert.*;

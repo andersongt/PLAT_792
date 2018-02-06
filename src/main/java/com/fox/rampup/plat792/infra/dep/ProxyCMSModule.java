@@ -3,6 +3,7 @@
  */
 package com.fox.rampup.plat792.infra.dep;
 
+import org.slf4j.Logger;
 import com.fox.platform.lib.cfg.ConfigLibFactory;
 import com.fox.platform.lib.cfg.EndpointConfig;
 import com.fox.platform.lib.fac.WebClientFactory;
@@ -45,6 +46,7 @@ public class ProxyCMSModule extends AbstractModule
 
     webClientFactory = new WebClientFactoryImpl(vertx,
         restCMSChannlesVerticleConfig.getProxyCMSChannelsVerticleConfig().getEndpoint());
+    
   }
 
   @Override

@@ -1,6 +1,7 @@
 package com.fox.rampup.plat792.infra.anti.impl;
 
 import java.util.Map;
+import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
 import com.fox.platform.lib.cfg.EndpointConfig;
 import com.fox.platform.lib.fac.WebClientFactory;
 import com.fox.rampup.plat792.dom.ent.ContentChannels;
@@ -56,14 +57,13 @@ public class CMSAnticorruptionImpl implements CMSAnticorruption
     webClient
         .post(endPointConfig.getPort(),
             cmsAnticorruptionConfig.getChannelQuery().getHost(),
-            cmsAnticorruptionConfig.getChannelQuery().getUrlPath())
+            cmsAnticorruptionConfig.getChannelQuery().getUrlPath())        
         .ssl(endPointConfig.isSsl()).sendJson(
             proxyCmsTranslator.mapRequestBodyGetConentToJson(
                 cmsAnticorruptionConfig.getChannelQuery().getRequestPayload(), params),
             response -> {
               if (response.succeeded())
               {
-
                 ContentChannels resultContent =
                     proxyCmsTranslator.mapCmsResponseJsonToContentChannels(
                         response.result().bodyAsJsonObject());
@@ -72,7 +72,7 @@ public class CMSAnticorruptionImpl implements CMSAnticorruption
               } else
               {
 
-                futureChannels.fail("Fail request");
+                futureChannels.fail("Anticorruption - Fail request");
               }
             });
   }

@@ -15,4 +15,5 @@ public interface CMSAnticorruption
 {
   public void getContentChannels(Map<String, String> params,
       Handler<AsyncResult<ContentChannels>> resultChannels);
+  
 }
