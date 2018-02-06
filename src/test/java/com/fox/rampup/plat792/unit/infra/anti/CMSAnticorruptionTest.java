@@ -82,25 +82,16 @@ public class CMSAnticorruptionTest
   {
     int httpPort = wireMockRule.port();
     config = loadJsonResource(CONFIG_FILE);
-
     configProxyCms = config.getJsonObject(RESTCMS_CONFIG).getJsonObject(PROXYCMS_CONFIG);
-
-
     config.getJsonObject(RESTCMS_CONFIG).getJsonObject(PROXYCMS_CONFIG)
         .getJsonObject(ENDPOINT_CONFIG).put("port", httpPort).put("ssl", false)
         .put("host", "localhost");
-
     config.getJsonObject(RESTCMS_CONFIG).getJsonObject("cmsAnticorruptionConfig")
         .getJsonObject("channelQuery").put("host", "localhost");
-
-
     VertxOptions vertxOptions =
         new VertxOptions().setBlockedThreadCheckInterval(1000 * 60 * 60);
     vertx = Vertx.vertx(vertxOptions);
-
     Guice.createInjector(new ProxyCMSModule(vertx, config)).injectMembers(this);
-
-
   }
 
   /**
@@ -122,7 +113,6 @@ public class CMSAnticorruptionTest
     } catch (Exception e)
     {
       fail("The test failed " + e.getMessage());
-      async.isFailed();
 
     }
 
@@ -131,7 +121,6 @@ public class CMSAnticorruptionTest
       if (resultChannels.succeeded())
       {
         ContentChannels contentChannels = resultChannels.result();
-        System.out.println(contentChannels.getChannels().get(0).getContentId());
         assertNotNull(contentChannels);
         async.complete();
 
